@@ -10,13 +10,21 @@ class Trailer extends Movie {
         this.name = name;
         this.id = id;
         // 5. This method will show the button on the screen, no changes necessary
-        this.renderButton()
+        this.renderButton();
+        
     }
 }
+
+// $("#trailers").sparkle();
+
 // 6. Create four instances of the Trailer class, passing in the name of a film as the first argument and its corresponding YouTube ID as the second argument
 
 var kingArthurTrailer = new Trailer ('King Arthur', 'EqbePJOLdjY');
 var powerRangersTrailer = new Trailer ('Power Rangers', 'uBqoMAXfThM');
 var belkoExperimentTrailer = new Trailer ('Belko Experiment', 'mWXeVFeca34');
 var mineTrailer = new Trailer ('Mine', 'ESLXnt6fe_8');
+
+$(document).ready(function() {
+    $("button").sparkle();
+});
 
